@@ -27,7 +27,7 @@ import { app } from './app.js';
 
 dotenv.config({ path: './env' });
 connectDb().then(()=>{
-    app.listen(process.env.PORT  || 8000 ,()=>{
+    app.listen(process.env.PORT  || 7000 ,()=>{
          console.log(` server is connected on ${process.env.PORT}`)
     })
 })
